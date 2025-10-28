@@ -1,5 +1,6 @@
 import { description, title, url } from "@/lib/metadata";
 import { Metadata } from "next";
+import { Simulation } from "@/components/simulation";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +37,7 @@ export default function Home() {
     <main className="flex flex-col gap-3 place-items-center px-4">
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
+      <Simulation />
     </main>
   );
 }
